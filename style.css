@@ -1,3 +1,4 @@
+/* Resetando margens e padding para o body */
 body {
     margin: 0;
     padding: 0;
@@ -7,39 +8,112 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #4b00a1, #3a3794, #2d4e7a, #4a90e2, #6f83b3);
+    font-family: 'Arial', sans-serif;
 }
 
 .previsao-container {
-    width: 400px;
-    height: 300px;
-    background: rgba(255, 255, 255, 0.096);
-    border: 1px solid white;
-    box-shadow: rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    display: column;
+    width: 380px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.previsao-localizacao h2{
-    color: white;
-    font-size: 15px;
-    text-align: end;
-    margin: 10px;
-}
-
-.previsao-titulos {
     text-align: center;
-    padding: 0;
-    color: white;
-}
-.previsao-titulos p{
-    font-size: 14px;
 }
 
-.previsao-informacao{
-    width: 300px;
-    height: 110px;
+.previsao-localizacao h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.previsao-localizacao h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.previsao-localizacao p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.descricao-tempo {
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.previsao-dias {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.dia {
+    text-align: center;
+}
+
+.dia h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.dia p {
+    font-size: 16px;
+}
+
+.day {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
-    background-color: #2d4e7a;
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 3px;
+}
+
+/* Quando o usuário passa o mouse sobre o card */
+.day:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Estilizando os ícones dentro dos dias */
+.day i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.localizacao{
+    margin-top: 15px;
+}
+
+.pesquisa{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.botao{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 40px;
+    color: white;
+    background-color: #204980;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao:hover{
+    transform: translateY(-5px);
 }
