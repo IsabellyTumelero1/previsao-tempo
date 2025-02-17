@@ -26,6 +26,18 @@ body {
     text-align: center;
 }
 
+.informacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: #2b5286;
+    padding-top: 30px;
+    height: 230px;
+    width: 300px;
+    border-radius: 10px;
+}
+
 .previsao-localizacao h2 {
     font-size: 18px;
     margin-bottom: 10px;
@@ -73,7 +85,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     padding: 15px;
-    width: 50%;
     text-align: center;
     color: white;
     font-size: 14px;

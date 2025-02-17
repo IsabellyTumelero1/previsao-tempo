@@ -12,26 +12,26 @@
 
 <body>
     <div class="previsao-container">
-        <!-- Localização e Temperatura -->
-        <div class="previsao-localizacao">
-            <h2><i class="bi bi-geo-alt"></i> Americana</h2>
-            <h1><span id="temperature"></span> <i class="bi bi-thermometer-sun"></i></h1>
-            <p><strong>Vento:</strong> <span id="wind"></span><i class="bi bi-wind"></i></p>
-        </div>
+        <div class="informacao">
+            <div class="previsao-localizacao">
+                <h2><i class="bi bi-geo-alt"></i> Americana</h2>
+                <h1><span id="temperatura"></span> <i class="bi bi-thermometer-sun"></i></h1>
+                <p><strong>Vento:</strong> <span id="vento"></span><i class="bi bi-wind"></i></p>
+            </div>
 
-        <!-- Descrição do Tempo -->
-        <div class="descricao-tempo">
-            <p><strong>Tempo Atual:</strong> <span id="description"></span><i class="bi bi-sun"></i></p>
+            <div class="descricao-tempo">
+                <p><strong>Tempo Atual:</strong> <span id="descricao"></span><i class="bi bi-sun"></i></p>
+            </div>
         </div>
 
         <!-- Previsão para os Próximos 3 Dias -->
-        <div id="forecast" class="previsao-dias"> <!-- ID adicionado para previsão -->
+        <div id="previsao" class="previsao-dias"> <!-- ID adicionado para previsão -->
             <!-- Os dados de previsão serão inseridos aqui via JavaScript -->
         </div>
 
         <div class="localizacao">
             <input type="text" id="cidade" class="pesquisa" placeholder="Localização">
-            <button type="button" class="botao"><i class="bi bi-search"></i></button>
+            <button type="button" class="botao" onclick="fetchTempo()"><i class="bi bi-search"></i></button>
         </div>
     </div>
 
